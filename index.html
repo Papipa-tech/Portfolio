@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Filip Franicevic</title>
+</head>
+
+<body>
+    <!-- MATRIX BACKGROUND -->
+    <canvas id="c"></canvas>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <!-- BUTTON AND MORPHEUS -->
+        <div id="imageSound">
+            <div id="show-image" class="hidden">
+                <a><img src="images/morpheus.png" usemap="#image-map" alt=""></a>
+
+                <map name="image-map">
+                    <area id="leftPill" coords="142,355,42" shape="circle">
+                    <area id="rightPill"
+                        href="https://giphy.com/gifs/wake-up-spike-lee-school-daze-TdFwYIzuEKvUYJ22Tr/fullscreen"
+                        target="_blank" coords="455,356,41" shape="circle">
+                </map>
+            </div>
+
+            <button id="hide-btn" onclick=" playSound()"> enter_the_Matrix:$ <span class="cursor">|</span>
+                sound
+                on <i class="fa fa-volume-up" style="font-size:24px"></i> </button>
+
+            <audio id="audio" src="sounds/choose-pill.mp3">
+            </audio>
+        </div>
+
+        <!-- NAV BAR AND LINKS -->
+        <div class="container mainTxt">
+            <nav>
+                <ul>
+                    <li id="about">/about</li>
+                    <li id="projects">/projects</li>
+                    <li id="contact">/contact</li>
+                </ul>
+            </nav>
+
+            <main>
+                <h1>filipfran:$<span class="cursor">|</span>
+                </h1>
+                <h3>Find me in the Matrix:</h3>
+                <ul>
+                    <li><a href="https://github.com/Papipa-tech" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/filip-franicevic-5724a1201/" target="_blank">LinkedIn</a>
+                    </li>
+                    <li><a href="https://www.facebook.com/filip.franicevic" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/flikas22/" target="_blank">Instagram</a></li>
+                </ul>
+            </main>
+        </div>
+    </div>
+
+    <!-- WINBOX CONTENT -->
+    <div class="hidden">
+        <div id="about-content">
+            <h2>about-me:$ <span class="cursor">|</span></h2>
+            <p>Hi! I'm Filip,
+                a self-taught developer who loves to code!
+                Technologies I use include:
+
+                HTML, CSS, Sass, JavaScript (ES6), Bootstrap, AJAX, MySQL, CSS Flexbox/Grid, Node.js, Git, GitLab,
+                GitHub, npm, Linux Environment.
+
+                Technologies I am currently getting knowledgeable at:
+
+                TypeScript, React.js, Vue.js, Webpack, Python, Java</p>
+        </div>
+
+        <div id="projects-content">
+            <h2>my-projects:$ <span class="cursor">|</span></h2>
+            <br>
+
+            <h3><a href="https://papipa-tech.github.io/guess-a-number-game/" target="_blank">/guess-a-number-game</a>
+            </h3>
+            <ul>
+                <li>Guess a number from 1 to 20, the less tries you take, the higher the score. You have five tries.
+                    Make them count!</li>
+            </ul>
+
+            <h3><a href="https://papipa-tech.github.io/fastes-to-100-game/" target="_blank">/fastes-to-100-game</a>
+            </h3>
+            <ul>
+                <li>DOM Manipulation, Game logic implementation, Event listeners..
+                    Two player game where the goal is to reach a 100 points before your opponent.</li>
+            </ul>
+
+            <h3><a href="https://papipa-tech.github.io/SvBarbara/" target="_blank">/SvBarbara-website</a></h3>
+            <ul>
+                <li>Website for a clients newly founded quarry business.
+                    Basic html/css/bootstrap/javascript.</li>
+            </ul>
+        </div>
+
+        <div id="contact-content">
+            <h2>contact-me:$ <span class="cursor">|</span></h2>
+            <p>You can contact via email or phone number below</p>
+            <ul>
+                <li>Email:</li>
+                <li>fliksauskas22@gmail.com</li>
+                <br>
+                <li>Phone:</li>
+                <li>+47 465 55 654</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/matrix.js"></script>
+    <script src="js/mobile-detect.js"></script>
+    <script src="js/winbox.js"></script>
+
+
+</body>
+
+</html>
