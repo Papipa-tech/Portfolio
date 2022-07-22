@@ -6,33 +6,33 @@ const contact = document.querySelector("#contact");
 const aboutContent = document.querySelector("#about-content");
 const contactContent = document.querySelector("#contact-content");
 const projectsContent = document.querySelector("#projects-content");
-const mainContainer = document.querySelector(".mainTxt");
-const leftPill = document.querySelector("#leftPill");
-const btn = document.querySelector("#hide-btn");
-const slika = document.querySelector("#show-image");
+// const mainContainer = document.querySelector(".mainTxt");
+// const leftPill = document.querySelector("#leftPill");
+// const btn = document.querySelector("#hide-btn");
+// const slika = document.querySelector("#show-image");
 
 // Hide nav and link initially
-mainContainer.classList.add("hidden");
+// mainContainer.classList.add("hidden");
 
 // Morpheus voice sound
-const playSound = function () {
-  const sound = document.getElementById("audio");
-  sound.play();
-};
+// const playSound = function () {
+//   const sound = document.getElementById("audio");
+//   sound.play();
+// };
 
 //Hide button, play sound and show image
-btn.addEventListener("click", () => {
-  slika.classList.remove("hidden");
-  btn.classList.add("hidden");
-  playSound();
-});
+// btn.addEventListener("click", () => {
+//   slika.classList.remove("hidden");
+//   btn.classList.add("hidden");
+//   playSound();
+// });
 
 // Red pill button functionality
-leftPill.addEventListener("click", () => {
-  mainContainer.classList.remove("hidden");
-  slika.classList.add("hidden");
-  btn.classList.add("hidden");
-});
+// leftPill.addEventListener("click", () => {
+//   mainContainer.classList.remove("hidden");
+//   slika.classList.add("hidden");
+//   btn.classList.add("hidden");
+// });
 
 // About window
 about.addEventListener("click", () => {
